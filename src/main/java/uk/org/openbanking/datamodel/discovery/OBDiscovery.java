@@ -57,7 +57,7 @@ public class OBDiscovery {
 
     public Optional<OBDiscoveryAPI<OBDiscoveryAPILinksPayment>> getPaymentInitiationAPI(String version) {
     	Optional<OBDiscoveryAPI<OBDiscoveryAPILinksPayment>> result = paymentInitiationAPIs.stream().filter(apis -> apis.getVersion().equals(version)).findFirst();
-    	if (result==null) {
+    	if (!result.isPresent()) {
     		OBDiscoveryAPILinksPayment obdapilp = new OBDiscoveryAPILinksPayment();
     		OBDiscoveryAPI<OBDiscoveryAPILinksPayment> obDiscoveryAPILinksPayment = new OBDiscoveryAPI<OBDiscoveryAPILinksPayment>();
     		obDiscoveryAPILinksPayment.setVersion(version);
@@ -97,7 +97,6 @@ public class OBDiscovery {
     		this.addAccountAndTransactionAPI(obDiscoveryAPILinksAccount);
     		result = Optional.of(obDiscoveryAPILinksAccount);
     	}
-    	System.out.println(result);
         return result;
     }
 
