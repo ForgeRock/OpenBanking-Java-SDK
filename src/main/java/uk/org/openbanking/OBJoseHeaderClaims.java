@@ -38,7 +38,7 @@ public class OBJoseHeaderClaims {
      *
      * This indicates that the message payload is not base64 url encoded.
      *
-     * (See RFC 7797 – The “b64” header Parameter)
+     * (See RFC 7797 – The "b64" header Parameter)
      */
     public static final String B64 = "b64";
 
@@ -46,7 +46,7 @@ public class OBJoseHeaderClaims {
      * This must be a JSON number representing the number of seconds from 1970-01-01T0:0:0Z as measured in UTC
      * until the date/time.
      *
-     * This is a private header parameter name. (See RFC 7515 – Private Header Parameter Names)
+     * This is a private header parameter name. (See RFC 7515 - Private Header Parameter Names)
      */
     public static final String OB_IAT = "http://openbanking.org.uk/iat";
 
@@ -59,8 +59,8 @@ public class OBJoseHeaderClaims {
 
     /**
      *
-     * This must be a string array consisting of the values “b64”, “http://openbanking.org.uk/iat“,
-     * “http://openbanking.org.uk/iss“
+     * This must be a string array consisting of the values "b64", "http://openbanking.org.uk/iat",
+     * "http://openbanking.org.uk/iss"
      *
      * This indicates that the JWS signature validator must understand and process the three additional claims.
      */

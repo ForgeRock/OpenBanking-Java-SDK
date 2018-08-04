@@ -21,11 +21,11 @@ public enum OBExternalAccountIdentification2Code {
     /**
      * An identifier used internationally by financial institutions to uniquely identify the account of a customer at
      * a financial institution, as described in the latest edition of the international standard ISO 13616. “Banking
-     * and related financial services – International Bank Account Number (IBAN)”.
+     * and related financial services - International Bank Account Number (IBAN)".
      */
     IBAN,
     /**
-     * Sort Code and Account Number – identifier scheme used in the UK by financial institutions to identify the
+     * Sort Code and Account Number - identifier scheme used in the UK by financial institutions to identify the
      * account of a customer. The identifier is the concatenation of the 6 digit UK sort code and 8 digit account number.
      The regular expression for this identifier is: ^[0-9]{6}[0-9]{8}$
      */

@@ -42,7 +42,7 @@ public class OBHeaders {
     /**
      * An RFC4122 UID used as a correlation id.
      *
-     * If provided, the ASPSP must “play back” this value in the x-fapi-interaction-id response header.
+     * If provided, the ASPSP must "play back" this value in the x-fapi-interaction-id response header.
      */
     public static final String X_FAPI_INTERACTION_ID = "x-fapi-interaction-id";
 
